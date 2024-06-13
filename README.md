@@ -1,6 +1,6 @@
 # Diabetes Prediction Systems
 
-## Autors
+## Authors
 - Aan Syawaluddin	H071221031
 - Andi Ahmad Fa'il Fudhayl H071221026
 - Rasyad Bimasatya H071221024
