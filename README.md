@@ -1,9 +1,7 @@
-"# DM-ML24-ProjeckTask" 
+# Diabetes Prediction Systems
 
-Aan Syawaluddin	H071221031
-
-Andi Ahmad Fa'il Fudhayl H071221026
-
-Rasyad Bimasatya H071221024
-
-Minhajul Yusri Khairi H071221006
+## Autors
+- Aan Syawaluddin	H071221031
+- Andi Ahmad Fa'il Fudhayl H071221026
+- Rasyad Bimasatya H071221024
+- Minhajul Yusri Khairi H071221006
