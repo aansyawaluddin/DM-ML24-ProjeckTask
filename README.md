@@ -19,6 +19,7 @@ git clone <your_repository_url>
 
 2. Navigate to the `backend` folder.
 3. Open a terminal or Command Prompt (CMD).
+4. Go to activate the Virtual Environment
 
 #### Activating the Virtual Environment
 
@@ -28,15 +29,7 @@ Activate it by running the following command in CMD:
 myenv\Scripts\activate
 ```
 
-4. Install Required Packages
-
-Run the following command to install all required packages for the backend from the requirements.txt file:
-
-```bash
-pip install -r requirements.txt
-```
-
-4. Running the Backend Server
+5. Running the Backend Server
 
 ```bash
 python app.py
@@ -65,4 +58,3 @@ npm run dev
 5. Accessing the Application
 
 Once both backend and frontend servers are running, open your web browser and go to http://localhost:3000 to access the application.
-
