@@ -10,8 +10,15 @@
 
 ### Running the Backend Server
 
-1. Navigate to the `backend` folder.
-2. Open a terminal or Command Prompt (CMD).
+
+1. Clone the repository to your local machine:
+
+```bash
+git clone <your_repository_url>
+```
+
+2. Navigate to the `backend` folder.
+3. Open a terminal or Command Prompt (CMD).
 
 #### Activating the Virtual Environment
 
@@ -21,7 +28,7 @@ Activate it by running the following command in CMD:
 myenv\Scripts\activate
 ```
 
-3. Install Required Packages
+4. Install Required Packages
 
 Run the following command to install all required packages for the backend from the requirements.txt file:
 
