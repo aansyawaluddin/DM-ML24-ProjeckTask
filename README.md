@@ -15,7 +15,7 @@
 
 #### Activating the Virtual Environment
 
-If you are using a virtual environment (`myenv`), activate it by running the following command in CMD:
+Activate it by running the following command in CMD:
 
 ```bash
 myenv\Scripts\activate
