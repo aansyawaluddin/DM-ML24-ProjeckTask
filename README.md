@@ -37,7 +37,7 @@ python app.py
 
 ### Running the Frontend Server
 
-1. Navigate to the frontend folder.
+1. Navigate to the `frontend` folder.
 2. Open a terminal or Command Prompt (CMD).
 3. Install Required Packages
 
