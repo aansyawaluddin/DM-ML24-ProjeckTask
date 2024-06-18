@@ -51,7 +51,7 @@ const IndexPage = () => {
     }
     return errors;
   };
-  
+
 
   const formik = useFormik({
     initialValues: {
@@ -91,13 +91,13 @@ const IndexPage = () => {
             <label className="block text-gray-700 text-sm font-bold mb-2 capitalize">
               {key === 'bloodPressure' ? 'Blood Pressure' : key === 'skinThickness' ? 'Skin Thickness' : key === 'diabetesPedigreeFunction' ? 'Diabetes Pedigree Function' : key}
             </label>
-            <input 
-              type="text" 
-              name={key} 
-              onChange={formik.handleChange} 
+            <input
+              type="text"
+              name={key}
+              onChange={formik.handleChange}
               onBlur={formik.handleBlur}
-              value={formik.values[key]} 
-              className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${formik.touched[key] && formik.errors[key] ? 'border-red-500' : ''}`} 
+              value={formik.values[key]}
+              className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${formik.touched[key] && formik.errors[key] ? 'border-red-500' : ''}`}
             />
             {formik.touched[key] && formik.errors[key] ? (
               <p className="text-red-500 text-xs italic">{formik.errors[key]}</p>
@@ -105,8 +105,8 @@ const IndexPage = () => {
           </div>
         ))}
         <div className="flex items-center mt-3">
-          <button 
-            type="submit" 
+          <button
+            type="submit"
             className="bg-blue-500 hover:bg-blue-700 h-[75%] text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             disabled={loading} // Disable button when loading
           >
