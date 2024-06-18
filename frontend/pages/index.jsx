@@ -33,10 +33,6 @@ const IndexPage = () => {
 
     return errors;
   };
-<<<<<<< HEAD
-
-=======
->>>>>>> a5e08599b40a6df8eaf974f29ab9f521ec796778
 
   const formik = useFormik({
     initialValues: {
@@ -91,15 +87,13 @@ const IndexPage = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values[key]}
-<<<<<<< HEAD
               className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${formik.touched[key] && formik.errors[key] ? 'border-red-500' : ''}`}
-=======
               className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
                 formik.touched[key] && formik.errors[key]
                   ? "border-red-500"
                   : ""
               }`}
->>>>>>> a5e08599b40a6df8eaf974f29ab9f521ec796778
+
             />
             {key === "pregnancies" && (
               <p className="text-xs text-gray-500 mt-1">
@@ -169,9 +163,6 @@ const IndexPage = () => {
     </div>
   );
 };
-
-<<<<<<< HEAD
 export default IndexPage
-=======
-export default IndexPage;
->>>>>>> a5e08599b40a6df8eaf974f29ab9f521ec796778
+
+
