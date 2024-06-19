@@ -88,7 +88,6 @@ const IndexPage = () => {
               onBlur={formik.handleBlur}
               value={formik.values[key]}
 
-              className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${formik.touched[key] && formik.errors[key] ? 'border-red-500' : ''}`}
               className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
                 formik.touched[key] && formik.errors[key]
                   ? "border-red-500"
