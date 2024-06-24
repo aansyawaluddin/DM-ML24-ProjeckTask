@@ -64,8 +64,16 @@ const IndexPage = () => {
   });
 
   return (
-    <div className="m-10 min-h-screen bg-white flex flex-col items-center justify-center">
-      <h1 className="text-3xl font-bold mb-6">Diabetes Prediction</h1>
+    <div
+      className="min-h-screen bg-cover bg-center flex flex-col items-center justify-center"
+      style={{
+        backgroundImage: "url('/bg.jpg')",
+        height: '100vh',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
+      <h1 className="text-3xl font-bold mb-6 text-white">Diabetes Prediction</h1>
       <form
         onSubmit={formik.handleSubmit}
         className="bg-white p-6 rounded-lg shadow-md w-full max-w-md"
@@ -87,14 +95,11 @@ const IndexPage = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values[key]}
-
               className={`shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline ${
                 formik.touched[key] && formik.errors[key]
                   ? "border-red-500"
                   : ""
               }`}
-
-
             />
             {key === "pregnancies" && (
               <p className="text-xs text-gray-500 mt-1">
@@ -129,7 +134,7 @@ const IndexPage = () => {
                 Enter diabetes pedigree function (0.08-2.42).
               </p>
             )}
-              {key === "age" && (
+            {key === "age" && (
               <p className="text-xs text-gray-500 mt-1">Enter age (17+).</p>
             )}
             {formik.touched[key] && formik.errors[key] && (
@@ -165,5 +170,4 @@ const IndexPage = () => {
   );
 };
 
-export default IndexPage
-
+export default IndexPage;
