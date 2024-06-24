@@ -15,7 +15,7 @@
 git clone <your_repository_url>
 ```
 
-3. Navigate to your Project Directory
+3. Navigate to your Root Project Directory
 
 ### Running the Backend Server
 
@@ -27,8 +27,6 @@ cd backend
 
 5. Open a Command Prompt (CMD).
 6. Go to activate the Virtual Environment
-
-#### Activating the Virtual Environment
 
 Activate it by running the following command in CMD:
 
@@ -50,14 +48,16 @@ python app.py
 
 ### Running the Frontend Server
 
-9. Navigate to the `frontend` folder.
+9. Navigate to your Root Project Directory
+
+10. Navigate to the `frontend` folder.
 
 ```bash
 cd frontend
 ```
 
-10. Open a Command Prompt (CMD).
-11. Install Required Packages
+11. Open a Command Prompt (CMD).
+12. Install Required Packages
 
 Run the following command to install all required packages for the frontend using npm:
 
@@ -65,7 +65,7 @@ Run the following command to install all required packages for the frontend usin
 npm install
 ```
 
-12. Running the Frontend Server
+13. Running the Frontend Server
 
 To start the frontend server, use the following command:
 
@@ -73,6 +73,6 @@ To start the frontend server, use the following command:
 npm run dev
 ```
 
-13. Accessing the Application
+14. Accessing the Application
 
 Once both backend and frontend servers are running, open your web browser and go to http://localhost:3000 to access the application.
