@@ -83,11 +83,23 @@
       <workItem from="1718915590443" duration="1642000" />
       <workItem from="1718918693540" duration="1199000" />
       <workItem from="1719210625339" duration="200000" />
-      <workItem from="1719210999177" duration="1358000" />
+      <workItem from="1719210999177" duration="1873000" />
+      <workItem from="1719227269498" duration="2530000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>notebook://C:/KULIAH/SEMESTER 4/MACHINE LEARNING/DM-ML24-Projeck/backend/Diabetes_Prediction_Using_ML.ipynb</url>
+          <line>277</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
