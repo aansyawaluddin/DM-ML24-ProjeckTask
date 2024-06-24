@@ -52,7 +52,6 @@ const IndexPage = () => {
         const response = await axios.post("http://localhost:5000/predict", {
           features: Object.values(values).map(Number),
         });
-        // console.log(response.data.prediction);
         setPrediction(response.data.prediction);
       } catch (error) {
         console.error("Prediction error:", error.message);
@@ -64,15 +63,18 @@ const IndexPage = () => {
   });
 
   return (
-    <div className="m-10 min-h-screen bg-white flex flex-col items-center justify-center">
-      <h1 className="text-3xl font-bold mb-6">Diabetes Prediction</h1>
+    <div
+      className="h-screen w-full bg-cover bg-center flex flex-col items-center justify-center"
+      style={{ backgroundImage: 'url(/bg.jpg)' }}
+    >
+      <h1 className="text-3xl font-bold mb-6 text-white">Diabetes Prediction</h1>
       <form
         onSubmit={formik.handleSubmit}
-        className="bg-white p-6 rounded-lg shadow-md w-full max-w-md"
+        className="bg-gray-800 text-white p-6 rounded-lg shadow-md w-full max-w-md"
       >
         {Object.keys(formik.values).map((key) => (
           <div key={key} className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2 capitalize">
+            <label className="block text-gray-300 text-sm font-bold mb-2 capitalize">
               {key === "bloodPressure"
                 ? "Blood Pressure"
                 : key === "skinThickness"
@@ -92,40 +94,40 @@ const IndexPage = () => {
               }`}
             />
             {key === "pregnancies" && (
-              <p className="text-xs text-gray-500 mt-1">
+              <p className="text-xs text-gray-400 mt-1">
                 Enter number of pregnancies (0-17).
               </p>
             )}
             {key === "glucose" && (
-              <p className="text-xs text-gray-500 mt-1">
+              <p className="text-xs text-gray-400 mt-1">
                 Enter glucose level (0-199).
               </p>
             )}
             {key === "bloodPressure" && (
-              <p className="text-xs text-gray-500 mt-1">
+              <p className="text-xs text-gray-400 mt-1">
                 Enter blood pressure (0-122).
               </p>
             )}
             {key === "skinThickness" && (
-              <p className="text-xs text-gray-500 mt-1">
+              <p className="text-xs text-gray-400 mt-1">
                 Enter skin thickness (0-99).
               </p>
             )}
             {key === "insulin" && (
-              <p className="text-xs text-gray-500 mt-1">
+              <p className="text-xs text-gray-400 mt-1">
                 Enter insulin level (0-846).
               </p>
             )}
             {key === "bmi" && (
-              <p className="text-xs text-gray-500 mt-1">Enter BMI (18-50).</p>
+              <p className="text-xs text-gray-400 mt-1">Enter BMI (18-50).</p>
             )}
             {key === "diabetesPedigreeFunction" && (
-              <p className="text-xs text-gray-500 mt-1">
+              <p className="text-xs text-gray-400 mt-1">
                 Enter diabetes pedigree function (0.08-2.42).
               </p>
             )}
             {key === "age" && (
-              <p className="text-xs text-gray-500 mt-1">Enter age (17+).</p>
+              <p className="text-xs text-gray-400 mt-1">Enter age (17+).</p>
             )}
             {formik.touched[key] && formik.errors[key] && (
               <p className="text-red-500 text-xs italic">
@@ -143,7 +145,7 @@ const IndexPage = () => {
             {loading ? "Predicting..." : "Predict"}
           </button>
           {prediction !== null && !loading && (
-            <div className="ml-4 p-3 bg-white rounded-lg shadow-md">
+            <div className="ml-4 p-3 bg-gray-700 rounded-lg shadow-md">
               <h2 className="text-sm font-bold">
                 Prediction: {prediction === 1 ? "Diabetes" : "No Diabetes"}
               </h2>

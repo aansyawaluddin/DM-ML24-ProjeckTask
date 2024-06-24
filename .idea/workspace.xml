@@ -17,6 +17,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JSX File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -84,7 +85,8 @@
       <workItem from="1718918693540" duration="1199000" />
       <workItem from="1719210625339" duration="200000" />
       <workItem from="1719210999177" duration="1873000" />
-      <workItem from="1719227269498" duration="2530000" />
+      <workItem from="1719227269498" duration="2716000" />
+      <workItem from="1719234877329" duration="4134000" />
     </task>
     <servers />
   </component>
@@ -96,7 +98,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
           <url>notebook://C:/KULIAH/SEMESTER 4/MACHINE LEARNING/DM-ML24-Projeck/backend/Diabetes_Prediction_Using_ML.ipynb</url>
-          <line>277</line>
+          <line>266</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
