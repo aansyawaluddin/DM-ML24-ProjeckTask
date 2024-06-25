@@ -64,7 +64,7 @@ const IndexPage = () => {
 
   return (
     <div
-      className="h-screen w-full bg-cover bg-center flex flex-col items-center justify-center"
+      className="h-full w-full py-20 bg-cover bg-center flex flex-col items-center justify-center"
       style={{ backgroundImage: 'url(/bg.jpg)' }}
     >
       <h1 className="text-3xl font-bold mb-6 text-white">Diabetes Prediction</h1>
