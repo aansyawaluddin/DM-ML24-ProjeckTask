@@ -2,12 +2,23 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import joblib
 import pandas as pd
+import os
 
 app = Flask(__name__)
 CORS(app)
 
-model = joblib.load('diabetes.pkl')
-transformer = joblib.load('transformer.pkl')
+model_path = os.path.join('training model', 'diabetes.pkl')
+transformer_path = os.path.join('training model', 'transformer.pkl')
+
+if not os.path.exists(model_path):
+    print(f"File {model_path} tidak ditemukan.")
+else:
+    model = joblib.load(model_path)
+
+if not os.path.exists(transformer_path):
+    print(f"File {transformer_path} tidak ditemukan.")
+else:
+    transformer = joblib.load(transformer_path)
 
 def set_new_bmi(row):
     if row["BMI"] < 18.5:
